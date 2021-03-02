@@ -1,0 +1,43 @@
+
+.element {
+    align-content: center;
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    z-index: 67;
+    align-items: center;
+}
+.glitch {
+    font-size: 10rem;
+    line-height: 1;
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: none;
+    color: $color-white;
+    &:before, &:after {
+        display: block;
+        content: 'Himanshu Khaitan';
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        opacity: .8;
+    } &:after {
+        color: rgba($color: $color-glitch-1, $alpha: 0.85);
+        z-index: -2;
+        animation: glitch 0.81s cubic-bezier(.25, .46, .45, .94) both infinite
+    } &:before {
+        color: rgba($color: $color-glitch-2, $alpha: 0.85);
+        z-index: -1;
+        animation: glitch 1.6s cubic-bezier(.25, .46, .45, .94) both infinite
+    }
+}
+
+#hero {
+    
+    background-image: linear-gradient(to right bottom, rgba($color-grey-1, 0.4), rgba($color-black, 0.4)), url('../img/Untitled design.png');
+    background-size: cover;
+}

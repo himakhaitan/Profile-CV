@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media screen and (max-width: 900px) {
+    html {
+      font-size: 50%; } }
+  @media screen and (max-width: 600px) {
+    html {
+      font-size: 35%; } }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; }
+
+@keyframes glitch {
+  0% {
+    transform: translate(0); }
+  20% {
+    transform: translate(-4px, 4px); }
+  40% {
+    transform: translate(-4px, -4px); }
+  60% {
+    transform: translate(4px, 4px); }
+  80% {
+    transform: translate(4px, -4px); }
+  to {
+    transform: translate(0); } }
+
+.element {
+  align-content: center;
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  z-index: 67;
+  align-items: center; }
+
+.glitch {
+  font-size: 10rem;
+  line-height: 1;
+  position: relative;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff; }
+  .glitch:before, .glitch:after {
+    display: block;
+    content: 'Himanshu Khaitan';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: .8; }
+  .glitch:after {
+    color: rgba(255, 46, 99, 0.85);
+    z-index: -2;
+    animation: glitch 0.81s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite; }
+  .glitch:before {
+    color: rgba(0, 255, 255, 0.85);
+    z-index: -1;
+    animation: glitch 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite; }
+
+#hero {
+  background-image: linear-gradient(to right bottom, rgba(24, 24, 24, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Untitled design.png");
+  background-size: cover; }

@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+
+   @media  screen and (max-width: 900px) {
+    font-size: 50%;
+   }
+   @media  screen and (max-width: 600px) {
+    font-size: 35%;
+   }
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+
+}
