@@ -1,0 +1,28 @@
+.navigation {
+   display: flex;  
+   align-items: center;
+   justify-items: center;
+   justify-content: center;
+
+
+   &__svg {
+       fill: $color-white;
+       width: 2rem;
+       height: 2rem;
+   }
+
+   &__item {
+       border-radius: 50%;
+       padding: 2rem;
+       border: 2px solid $color-white;
+       margin: 1rem 2rem;
+       
+   }
+}
+
+.menu {
+    border-radius: 70%;
+       padding: 2rem;
+       background-color: $color-menu;
+       border: 2px solid $color-menu;
+}

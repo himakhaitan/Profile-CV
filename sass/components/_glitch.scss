@@ -2,7 +2,7 @@
 .element {
     align-content: center;
     display: grid;
-    height: 100vh;
+    height: 86vh;
     justify-content: center;
     position: relative;
     z-index: 67;
@@ -40,4 +40,5 @@
     
     background-image: linear-gradient(to right bottom, rgba($color-grey-1, 0.4), rgba($color-black, 0.4)), url('../img/Untitled design.png');
     background-size: cover;
+    box-shadow: 0 4rem 6rem rgba($color-black, 0.15);
 }

@@ -18,6 +18,27 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400; }
 
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center; }
+  .navigation__svg {
+    fill: #fff;
+    width: 2rem;
+    height: 2rem; }
+  .navigation__item {
+    border-radius: 50%;
+    padding: 2rem;
+    border: 2px solid #fff;
+    margin: 1rem 2rem; }
+
+.menu {
+  border-radius: 70%;
+  padding: 2rem;
+  background-color: #e84545;
+  border: 2px solid #e84545; }
+
 @keyframes glitch {
   0% {
     transform: translate(0); }
@@ -35,7 +56,7 @@ body {
 .element {
   align-content: center;
   display: grid;
-  height: 100vh;
+  height: 86vh;
   justify-content: center;
   position: relative;
   z-index: 67;
@@ -69,4 +90,5 @@ body {
 
 #hero {
   background-image: linear-gradient(to right bottom, rgba(24, 24, 24, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Untitled design.png");
-  background-size: cover; }
+  background-size: cover;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.15); }
